@@ -1,1 +1,154 @@
 java2 file
+
+
+
+********************************************************
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Desktop/GitPracties/Developer3/.git/
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ echo "# EmptyRepository" >> README.md
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ ls
+Controller.java.txt  README.md  ServiceImpl.java.txt
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Controller.java.txt
+        README.md
+        ServiceImpl.java.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Controller.java.txt
+        ServiceImpl.java.txt
+
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git add .
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Controller.java.txt
+        new file:   README.md
+        new file:   ServiceImpl.java.txt
+
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git commit -m "first commit"
+[master (root-commit) f844f38] first commit
+ 3 files changed, 3 insertions(+)
+ create mode 100644 Controller.java.txt
+ create mode 100644 README.md
+ create mode 100644 ServiceImpl.java.txt
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git remote add origin https://github.com/Kavita-Ankolekar/EmptyRepository.git
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git remote -v
+origin  https://github.com/Kavita-Ankolekar/EmptyRepository.git (fetch)
+origin  https://github.com/Kavita-Ankolekar/EmptyRepository.git (push)
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Kavita-Ankolekar/EmptyRepository.git'
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git remote add origin https://github.com/Kavita-Ankolekar/EmptyRepository.git
+error: remote origin already exists.
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git commit -m "first commit"
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git remote add origin https://github.com/Kavita-Ankolekar/EmptyRepository.git
+error: remote origin already exists.
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Kavita-Ankolekar/EmptyRepository.git'
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Kavita-Ankolekar/EmptyRepository.git'
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git config --global user.email "kavita63pa20@gmail.com"
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Kavita-Ankolekar/EmptyRepository.git'
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git config --global user.email "kavita63pa20@gmail.com"
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git pull --rebase origin main
+fatal: couldn't find remote ref main
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Kavita-Ankolekar/EmptyRepository.git'
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git commit -m "first commit"
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (master)
+$ git branch -M main
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (main)
+$ git remote add origin https://github.com/Kavita-Ankolekar/EmptyRepository.git
+error: remote origin already exists.
+
+Admin@DESKTOP-GFFP3UB MINGW64 ~/Desktop/GitPracties/Developer3 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 348 bytes | 348.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Kavita-Ankolekar/EmptyRepository.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
